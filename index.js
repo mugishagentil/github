@@ -7,3 +7,13 @@ function evenNum(number){
 }
 let result = numbers.filter(evenNum)
 console.log(result)
+
+// check a length of one string in array
+let Names = ["Urban","Gentil", "Muhoza", "Gedeon", "Jerome", "bae"];
+function checkString(name){
+    if(name.length < 4){
+        return true
+    }
+}
+let checkedName = Names.filter(checkString);
+console.log(checkedName);
