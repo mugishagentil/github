@@ -1,4 +1,4 @@
-// Find if number in array is even number
+// 1.// Find if number in array is even number
 let numbers = [1,2,3,4,5,6,7,8,10,12];
 function evenNum(number){
   if(number % 2 == 0){
@@ -8,7 +8,7 @@ function evenNum(number){
 let result = numbers.filter(evenNum)
 console.log(result)
 
-// check a length of one string in array
+// 2.// check a length of one string in array
 let Names = ["Urban","Gentil", "Muhoza", "Gedeon", "Jerome", "bae"];
 function checkString(name){
     if(name.length < 4){
@@ -18,21 +18,40 @@ function checkString(name){
 let checkedName = Names.filter(checkString);
 console.log(checkedName);
 
-// a question to find if number is >< by using filter string method
+// 3.// a question to find if number is >< by using filter string method
 const age = [12,13,14,16,18,10,25,27,28,29,30,40];
 let filteredNumber = age.filter(function Myfilter(number){
     return number > 18;
 })
 console.log(filteredNumber);
-// eazy way
+// 4.// eazy way
 const age = [1,2,3,4,5,6,7,8,9,10];
 const result = age.filter(value => value % 2 == 0)
 console.log(result)
 
-// question to find a Sum of array 
+// 5.// question to find a Sum of array 
 const numbers = [10, 10, 10, 10, 10];
 let num = 0;
 for(let i = 0; i < numbers.length; i++){
     num += numbers[i];
 }
 console.log(num)
+
+// 6.Implement a function which convert the given boolean value into its string representation.
+function booleanToString(value) {
+  // Check if the value is true or false
+  if (value === true) {
+      return "true";
+  } else if (value === false) {
+      return "false";
+  } else {
+      return "Invalid input"; // If input is not a boolean
+  }
+}
+console.log(booleanToString(true));
+
+// 7.Make a function that will return a greeting statement that uses an input; your program should return,
+function greet(name){
+  return "Hello, " + name + " how are you doing today?";
+}
+console.log(greet("Gentil"))
