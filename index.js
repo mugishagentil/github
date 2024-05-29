@@ -55,3 +55,11 @@ function greet(name){
   return "Hello, " + name + " how are you doing today?";
 }
 console.log(greet("Gentil"))
+
+// 8.Write a JavaScript program to extract the first half of a even string.
+function sliceString(arr){
+  if(arr.length % 2 === 0){
+    return arr.slice(0, arr.length /2)
+  }return arr
+}
+console.log(0, sliceString("Gentil"))
