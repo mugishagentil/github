@@ -122,3 +122,7 @@ const EvenNum = numbers.map(num => {
   }return mult * 2
 })
 console.log(EvenNum)
+// To UpperCase
+const names = ["gentil", 'urban', 'gedeon'];
+const result = names.map(name => name.toUpperCase());
+console.log(result)
