@@ -126,3 +126,36 @@ console.log(EvenNum)
 const names = ["gentil", 'urban', 'gedeon'];
 const result = names.map(name => name.toUpperCase());
 console.log(result)
+
+// toString second methodes
+let newString = [];
+function stringNum(arr){
+  for(let i = 0; i < arr.length; i++){
+    newString = arr.toString();
+  }return newString 
+}
+const stringNumbers = stringNum([1,2,3,4,5]);
+console.log(stringNumbers)
+
+// Define a curried function named multiply that takes two arguments, a and b, but does so in two separate function calls
+function multiply(a) {
+  return function(b) {
+      return a * b;
+  }
+}
+
+// Example usage:
+const multiplyByTwo = multiply(2);
+const second = multiplyByTwo(5); 
+console.log(second)
+
+// find sum of even number in array
+let sum = 0;
+function SumNumber(number){
+    for(let i = 0; i <= number.length; i++){
+        if(number[i] % 2 === 0){
+            sum += number[i];
+        }
+    }return sum
+}
+console.log(SumNumber([1,2,3,4,5,6]))
