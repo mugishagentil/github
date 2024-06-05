@@ -182,6 +182,16 @@ let numbers = number.map(num => {
     }
     return false
 })
-console.log(numbers)
 
+// find even numbers found in one number
+function isEvenNum(num){
+  let even = []
+  for (let i = 0; i <= num; i++){
+      if(i % 2 === 0){
+          even.push(i);
+      }
+  }
+  return even
+}
+console.log(isEvenNum(20))
 
