@@ -195,3 +195,4 @@ function isEvenNum(num){
 }
 console.log(isEvenNum(20))
 
+
