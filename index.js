@@ -159,3 +159,29 @@ function SumNumber(number){
     }return sum
 }
 console.log(SumNumber([1,2,3,4,5,6]))
+
+// find if number you enter found in array
+function findNumbers(arr, number){
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] === number){
+      return true;
+    }
+  }
+  return false;
+}
+const numbers = findNumbers([1, 2, 3, 4,5, 6, 7, 8, 9, 10], );
+console.log(numbers)
+
+// find even number in array and return booleans
+
+let answer = 0;
+let number = [1,2,3,4,5,6,7,8,9,10];
+let numbers = number.map(num => {
+    if(num % 2 === 0){
+        return true
+    }
+    return false
+})
+console.log(numbers)
+
+
