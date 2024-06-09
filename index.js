@@ -195,4 +195,20 @@ function isEvenNum(num){
 }
 console.log(isEvenNum(20))
 
+// How to join a separated in put arrays
+function smash (words) {
+  let name;
+  name = words.join();
+   return name
+};
+console.log(smash(['hello', 'world', 'this', 'is', 'great']));
+
+// Complete the function to return his total number of goals in all three leagues.
+function findTotalGoal(laLigaGoals, copaDelReyGoals, championsLeagueGoals){
+  let sum;
+  sum = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+  return "Tatal Goals of Messi = " + sum;
+ }
+ console.log(findTotalGoal(10, 10, 50))
+
 
