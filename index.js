@@ -211,4 +211,8 @@ function findTotalGoal(laLigaGoals, copaDelReyGoals, championsLeagueGoals){
  }
  console.log(findTotalGoal(10, 10, 50))
 
+//  Eazy way to do it
+const goals = (a,b,c) => a + b + c;
+console.log(goals(10, 10 ,10))
+
 
