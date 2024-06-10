@@ -232,4 +232,15 @@ const totalSum = items.reduce((total, sum)=>{
 })
 console.log(totalSum)
 
+// find same number in array
+function findNumber(array, num){
+  let answer;
+  for(let i = 0; i < array.length; i++){
+    if(num === array[i]){
+     return "Good work" ;
+    }else "Not Match";
+    
+  }
+}
+console.log(findNumber([1,2,3,4,5,6,7,8,9,10], 13))
 
