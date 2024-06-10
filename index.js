@@ -215,4 +215,21 @@ function findTotalGoal(laLigaGoals, copaDelReyGoals, championsLeagueGoals){
 const goals = (a,b,c) => a + b + c;
 console.log(goals(10, 10 ,10))
 
+// Find sum of array by using Reduce methods
+
+let numbers = [10, 10 ,10, 10, 10, 50];
+function mySum(total, num){
+  return total + num;
+}
+function myRessult(item){
+  console.log(numbers.reduce(mySum));
+}
+myRessult()
+// eazy way to find sum using Reduce method
+const items = [10, 10, 10 ,10 ,10,  50];
+const totalSum = items.reduce((total, sum)=>{
+  return total + sum;
+})
+console.log(totalSum)
+
 
