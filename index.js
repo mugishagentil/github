@@ -243,4 +243,16 @@ function findNumber(array, num){
   }
 }
 console.log(findNumber([1,2,3,4,5,6,7,8,9,10], 13))
+// check if number palindrome
+let name = "Gentilsee";
+function checkPalindrome(){
+let answer = name.length;
+if(answer % 2 === 0){
+    console.log("Yes Is palindrome");
+}
+else if(answer % 2 !== 0){
+    console.log("No Is palindrome");
+}
+}
+checkPalindrome();
 
